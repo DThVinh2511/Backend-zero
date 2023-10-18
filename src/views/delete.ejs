@@ -11,20 +11,16 @@
     <a href="/">Home</a>
     <a href="/createUser">Create User</a>
   </div>
-  <form class="form" action="/update-user" method="post">
+  <form class="form" action="/delete-user" method="post">
     <fieldset class="fieldset">
      <legend>User:</legend>
      <div class="d-none">
       <label for="id">Id:</label>
       <input type="text" id="id" name="userId"  value="<%= user.id %>"><br><br>
      </div>
-     <label for="fname">Full name:</label>
-     <input type="text" id="fname" name="fname"  value="<%= user.name %>"><br><br>
      <label for="email">Email:</label>
      <input type="email" id="email" name="email" value="<%= user.email %>"><br><br>
-     <label for="city">City:</label>
-     <input type="text" id="city" name="city"  value="<%= user.city %>"><br><br>
-     <input type="submit" value="Submit">
+     <input type="submit" value="Delete">
     </fieldset>
   </form>
 </body>

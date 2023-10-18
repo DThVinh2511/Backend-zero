@@ -43,11 +43,13 @@
       <tr>
         <td><%= user.id %></td>
         <td><%= user.name %></td>
-        <td><%= user.emdil %></td>
+        <td><%= user.email %></td>
         <td><%= user.city %></td>
         <td>
           <a href="/update-user/<%= user.id %>">edit</a>
-          <button>delete</button>
+          <form action="/delete-user/<%= user.id %>" method="post">
+            <button>delete</button>
+          </form>
         </td>
       </tr>
     <% }) %>
